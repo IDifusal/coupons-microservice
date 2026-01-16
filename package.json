@@ -1,0 +1,48 @@
+{
+  "name": "coupon",
+  "version": "1.0.0",
+  "description": "Coupon system ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./src/index.js",
+    "start": "cross-env NODE_ENV=production node ./src/index.js",
+    "build": "node ./src/index.js",
+    "lint": "npx eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "test": "jest",
+    "test:watch": "jest --watchAll --detectOpenHandles",
+    "test:coverage": "test -- --coverage"
+  },
+  "author": "juan2ramos <juan2ramos@gmail.com> (https://juan2ramos.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "exceljs": "^4.3.0",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "joi": "^17.6.0",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.21.2"
+  }
+}
